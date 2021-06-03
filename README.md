@@ -6,7 +6,7 @@
 
 ## Idea
 
-Every individual aim to have a stable and secure solution to their network
+Every individual's aim is to have a stable and secure solution to their network
 vulnerabilities. Despite extensive study into Intrusion Detection Systems and a
 a plethora of antivirus software, there are currently no effective solutions until all of
 the parameters of an intrusion detection system are met, which are time-consuming,
