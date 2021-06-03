@@ -1,0 +1,169 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <script src = "jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('https://wallpapercave.com/wp/wp2691479.jpg');
+    size: auto;
+}
+.result {
+    border: 4px solid;
+    border-radius: 10px;
+    background-color: #adf1a7;
+    margin: 2em;
+    padding: 20px;
+    width: 40%;
+    height: 20%;
+    float: right;
+    text-align: justify;
+    border-color: green;
+}
+
+.list {
+    border: 4px solid;
+    border-radius: 10px;
+    background-color: #adf1a7;
+    margin: 2em;
+    padding: 20px;
+    width: 40%;
+    text-align: justify;
+    border-color: green;
+
+}
+
+.submit-btn {
+  border: 4px solid;
+  border-radius: 10px;
+  background-color: #adf1a7;
+  padding: 20px;
+  margin: 2em;
+  width: 40%;
+  border-color: green;
+}
+
+.img2{
+    width: 50%;
+    height: 50%;
+    float: right;
+    opacity: 20%;
+}
+.myButton {
+	box-shadow: 0px 0px 0px 0px #3dc21b;
+	background-color:#e3f162;
+	border-radius:28px;
+	border:2px solid #050505;
+	display:inline-block;
+	cursor:pointer;
+	color:#050505;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 75px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#d1b431;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.css-input {
+  padding: 5px;
+  font-size: 16px;
+  border-width: 0px;
+  border-color: #CCCCCC;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  border-radius: 19px;
+  box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+  text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+}
+.css-input:focus {
+  outline:none;
+}
+</style>
+
+
+</head>
+
+<body>
+    <center><img style=" height: 2cm; width: 2.2cm; margin: auto;" src="https://www.seb8iaan.com/wp-content/uploads/2020/09/Email-notifications-from-Azure-Security-Center-improved-0.png" alt=""></center>
+    <h1 style="text-align: center; font-family:'Odibee Sans', sansserif;color:  #20c020; font-size: 50;">NETWORK INTRUSION DETECTION SYSTEM</h1>
+    <div class="result">
+        <center><h3>ANALYSIS</h3></center>
+        <br>
+        {{prediction_text}}
+    </div>
+
+    <div class="submit-btn">
+        <center><h3>CHECK YOUR CONNECTION</h3></center>
+        <form action="{{ url_for('predict')}}" method="post">
+          <br>
+        <input type="text" name="csv" class="css-input" size="60" placeholder="Comma Seperated Values"/>
+        <br>
+        <br>
+        <center><button id="submitbtn" type="submit" class = "myButton" id = "myBtn">ANALYZE</button></center>
+        </form>
+    </div>
+    <div class="img"><img class="img2" src="https://media.giphy.com/media/2i7jspnRBYgg6v4Oki/giphy.gif" style = "float: right;" alt=""></div>
+    <div class="list">
+        <center><h3>4 TYPES OF ATTACKS</h3></center>
+        <style type="text/css">
+            .tg  {border-collapse:collapse;border-color:#aabcfe;border-spacing:0;}
+            .tg td{background-color:#e8edff;border-color:#aabcfe;border-style:solid;border-width:1px;color:#669;
+              font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg th{background-color:#b9c9fe;border-color:#aabcfe;border-style:solid;border-width:1px;color:#039;
+              font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg .tg-afo9{background-color:#ffffff;border-color:#000000;color:#000000;
+              font-family:"Trebuchet MS", Helvetica, sans-serif !important;;font-size:13px;font-weight:bold;text-align:center;
+              vertical-align:top}
+            .tg .tg-3kve{background-color:#ffffff;border-color:#000000;color:#000000;
+              font-family:"Trebuchet MS", Helvetica, sans-serif !important;;font-size:13px;text-align:center;vertical-align:top}
+            .tg .tg-o4dg{background-color:#e3f162;border-color:#343434;color:#000000;
+              font-family:"Trebuchet MS", Helvetica, sans-serif !important;;font-size:16px;font-weight:bold;text-align:center;
+              vertical-align:top}
+            </style>
+            <table class="tg">
+            <thead>
+              <tr>
+                <th class="tg-o4dg">Attack Type</th>
+                <th class="tg-o4dg">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-afo9"><span style="font-style:normal">Denial-Of-Service(DOS)</span><br><span style="font-style:normal"> Attack</span></td>
+                <td class="tg-3kve"><span style="font-weight:400;font-style:normal">It is a cyber-attack in which the perpetrator seeks to make a machine </span><br><span style="font-weight:400;font-style:normal">or network resource unavailable to its intended users </span>by temporarily <br>or indefinitely disrupting services of a host connected to the Internet.</td>
+              </tr>
+              <tr>
+                <td class="tg-afo9"><span style="font-style:normal">User to Root (U2R)</span><br><span style="font-style:normal"> Attack</span></td>
+                <td class="tg-3kve"><span style="font-weight:400;font-style:normal">Initially, attackers access normal user account, later gain access </span><br><span style="font-weight:400;font-style:normal">to the root by exploiting the vulnerabilities of the system.</span></td>
+              </tr>
+              <tr>
+                <td class="tg-afo9"><span style="font-style:normal">Probe Attack</span></td>
+                <td class="tg-3kve"><span style="font-weight:400;font-style:normal">Have an access to entire network information before introducing </span><br><span style="font-weight:400;font-style:normal">an attack.</span></td>
+              </tr>
+              <tr>
+                <td class="tg-afo9"><span style="font-style:normal">Root to Local (R2L)</span><br><span style="font-style:normal"> Attack</span></td>
+                <td class="tg-3kve"><span style="font-weight:400;font-style:normal">By exploiting some of the vulnerabilities of the network, </span><br><span style="font-weight:400;font-style:normal">attacker gains local access by sending packets </span><br><span style="font-weight:400;font-style:normal">on a remote machine.</span></td>
+              </tr>
+            </tbody>
+            </table>
+    </div>
+    <div>
+    
+</body>
+</html>
+
