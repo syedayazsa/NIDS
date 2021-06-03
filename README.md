@@ -1,9 +1,8 @@
 # Network Intrusion Detection System:
 ![build](https://github.com/ntkme/github-buttons/workflows/build/badge.svg) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/syedayazsa/NIDS) ![GitHub all releases](https://img.shields.io/github/downloads/syedayazsa/NIDS/total) ![GitHub language count](https://img.shields.io/github/languages/count/syedayazsa/NIDS) ![GitHub last commit](https://img.shields.io/github/last-commit/syedayazsa/NIDS) ![GitHub Repo stars](https://img.shields.io/github/stars/syedayazsa/NIDS?style=plastic) ![GitHub forks](https://img.shields.io/github/forks/syedayazsa/NIDS?style=plastic)
 
-[![N|Solid](https://i.ibb.co/xg8L9kH/in.gif)](www.google.com)
 
-[![N|Solid](https://i.ibb.co/HqLVYBq/Screenshot-2021-05-25-at-11-23-12-PM.png)](www.google.com)
+[![N|Solid](https://i.ibb.co/TLH3Vzp/Screenshot-2021-06-04-at-1-40-28-AM.png)](www.google.com)
 
 ## Idea
 
