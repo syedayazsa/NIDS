@@ -14,7 +14,7 @@ that IDS developers confront in establishing an effective intrusion detection
 the system, as well as its limitations and difficulties related to the development and
 organization of intrusion detection systems.
 
-We have trained & tested various machine-learning algorithms on the infamous <a href="https://www.unb.ca/cic/datasets/nsl.html">NSL-KDD dataset.</a>This was achieved carefully analyzing the data, pre-processing it, and then training it to achieve satisfactory performance on the test set.
+We have trained & tested various machine-learning algorithms on the infamous <a href="https://www.unb.ca/cic/datasets/nsl.html">NSL-KDD dataset.</a> This was achieved by carefully analyzing the data, pre-processing it, and training on it to gain satisfactory performance on the test set.
 
 
 #### How to Run:
